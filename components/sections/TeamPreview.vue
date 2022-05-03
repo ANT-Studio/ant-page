@@ -39,8 +39,6 @@
 
 <script lang="ts" setup>
 import { __ } from "~/utils/__";
-import MemberCard from "../MemberCard.vue";
-import BigLink from "../BigLink.vue";
 </script>
 
 <style lang="scss" scoped>

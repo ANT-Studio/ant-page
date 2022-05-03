@@ -44,9 +44,7 @@
 </template>
 
 <script lang="ts" setup>
-import ProjectPreview from "../ProjectPreview.vue";
 import { __ } from "~/utils/__";
-import BigLink from "../BigLink.vue";
 </script>
 
 <style lang="scss" scoped>

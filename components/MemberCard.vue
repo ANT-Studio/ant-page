@@ -32,7 +32,7 @@ defineProps<{
 @import "../assets/styles/variables";
 
 .member-card {
-  width: 22em;
+  width: 17em;
 
   .member-card-image {
     img {

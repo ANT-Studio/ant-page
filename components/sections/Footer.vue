@@ -19,7 +19,6 @@
 </template>
 
 <script lang="ts" setup>
-import BigLink from "../BigLink.vue";
 import { __ } from "~/utils/__";
 </script>
 

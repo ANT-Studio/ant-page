@@ -21,6 +21,7 @@ export const actions: IAction[] = [
   {
     icon: "github.svg",
     link: "https://github.com/ANT-Studio",
+    active: true,
   },
   {
     icon: "youtube.svg",

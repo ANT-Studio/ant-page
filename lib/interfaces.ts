@@ -9,6 +9,7 @@ export interface IRoute {
 export interface IAction {
   icon: string;
   link: string;
+  active?: boolean;
 }
 
 export type ColorMode = "dark" | "light";

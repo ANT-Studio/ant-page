@@ -1,4 +1,3 @@
-<!--suppress HtmlUnknownTarget -->
 <template>
   <nav class="navbar">
     <div class="logo" />
@@ -12,7 +11,10 @@
     <div class="actions">
       <div class="social-actions">
         <div v-for="action in actions">
-          <a :href="action.link" class="action">
+          <a
+            :href="action.active && action.link"
+            :class="['action', !action.active && 'action__not-active']"
+          >
             <img :src="'/images/icons/' + action.icon" alt="" />
           </a>
         </div>
@@ -89,6 +91,13 @@ const { toggleTheme } = useColorTheme();
       display: flex;
       align-items: center;
       gap: 2em;
+
+      .action {
+        &__not-active {
+          opacity: 50%;
+          cursor: auto;
+        }
+      }
 
       a {
         display: block;
