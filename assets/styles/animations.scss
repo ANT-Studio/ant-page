@@ -1,0 +1,42 @@
+@keyframes float {
+  0% {
+    transform: translatey(-10px);
+  }
+
+  50% {
+    transform: translatey(10px);
+  }
+
+  100% {
+    transform: translatey(-10px);
+  }
+}
+
+@keyframes hero-text {
+  0% { content: " future."; }
+  4% { content: " future"; }
+  8% { content: " futur"; }
+  12% { content: " futu"; }
+  16% { content: " fut"; }
+  20% { content: " fu"; }
+  24% { content: " f"; }
+  28% { content: "⠀"; }
+  32% { content: " a"; }
+  36% { content: " ap"; }
+  40% { content: " app"; }
+  44% { content: " apps"; }
+  48% { content: " apps."; }
+  52% { content: " apps"; }
+  56% { content: " app"; }
+  60% { content: " ap"; }
+  64% { content: " a"; }
+  68% { content: "⠀"; }
+  72% { content: " f"; }
+  76% { content: " fu"; }
+  80% { content: " fut"; }
+  84% { content: " futu"; }
+  88% { content: " futur"; }
+  92% { content: " future"; }
+  96% { content: " future."; }
+  100% { content: " future."; }
+}

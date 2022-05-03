@@ -3,7 +3,7 @@
     <div class="hero-wrapper">
       <div class="hero-content">
         <h3>Ant Project will make your dream apps</h3>
-        <h1>Let the ants create your future.</h1>
+        <h1>Let the ants create your <br /></h1>
         <h2>We will convert your ideas into real-life projects!</h2>
         <div class="actions">
           <button class="contact">{{ __("navbar.contactUs") }}</button>
@@ -29,6 +29,7 @@ import { __ } from "~/utils/__";
 <style lang="scss" scoped>
 @import "../../assets/styles/themes";
 @import "../../assets/styles/mixins";
+@import "../../assets/styles/animations";
 
 .hero {
   width: 100vw;
@@ -52,6 +53,11 @@ import { __ } from "~/utils/__";
         font-size: 4.5em;
         font-weight: 900;
         padding: 0.5em 0;
+
+        &::after {
+          content: " future.";
+          animation: hero-text 5s linear infinite;
+        }
       }
 
       h2 {
@@ -118,20 +124,6 @@ import { __ } from "~/utils/__";
         }
       }
     }
-  }
-}
-
-@keyframes float {
-  0% {
-    transform: translatey(-10px);
-  }
-
-  50% {
-    transform: translatey(10px);
-  }
-
-  100% {
-    transform: translatey(-10px);
   }
 }
 </style>
