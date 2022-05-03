@@ -4,17 +4,13 @@
       <div class="hero-content">
         <h3>Ant Project will make your dream apps</h3>
         <h1>Let the ants create your future.</h1>
-        <h2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing mi
-          pellentesque orci nec.
-        </h2>
+        <h2>We will convert your ideas into real-life projects!</h2>
         <div class="actions">
           <button class="contact">{{ __("navbar.contactUs") }}</button>
           <button class="about">{{ __("navbar.about") }}</button>
         </div>
       </div>
       <div class="hero-image">
-        <!--suppress HtmlUnknownTarget -->
         <img src="/images/HeroImage.svg" alt="Hero Image" />
       </div>
     </div>
@@ -30,14 +26,12 @@
 import { __ } from "~/utils/__";
 </script>
 
-<!--suppress CssUnknownTarget -->
 <style lang="scss" scoped>
 @import "../../assets/styles/themes";
 @import "../../assets/styles/mixins";
 
 .hero {
   width: 100vw;
-  /* FIXME: navbar height has to be calculated automatically */
   min-height: calc(100vh - 90px);
   position: relative;
   display: flex;

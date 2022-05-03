@@ -99,6 +99,7 @@ const { toggleTheme } = useColorTheme();
       @include themed() {
         @include button(t("secondary"), t("text"), t("main-shadow"));
       }
+
       margin-left: 5em;
     }
 
@@ -108,6 +109,7 @@ const { toggleTheme } = useColorTheme();
       outline: none;
       padding: 0;
       margin-left: 5em;
+      cursor: pointer;
     }
   }
 }

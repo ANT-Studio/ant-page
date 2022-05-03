@@ -10,12 +10,10 @@
       </div>
     </div>
     <div class="project-preview-links">
-      <a v-if="website" :href="website"
-        ><!--suppress HtmlUnknownTarget -->
+      <a v-if="website" :href="website">
         <img src="/images/icons/website.svg" alt=""
       /></a>
-      <a v-if="github" :href="github"
-        ><!--suppress HtmlUnknownTarget -->
+      <a v-if="github" :href="github">
         <img src="/images/icons/github.svg" alt=""
       /></a>
     </div>

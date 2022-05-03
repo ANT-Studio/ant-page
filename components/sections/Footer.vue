@@ -29,9 +29,11 @@ footer {
   position: relative;
   overflow: hidden;
   z-index: 0;
+
   .footer-wrapper {
-    z-index: 2;
     @include sectionContainer();
+
+    z-index: 2;
     display: flex;
     padding: 5em 0;
 
@@ -43,6 +45,7 @@ footer {
 
       img {
         width: 20%;
+
         @include themed() {
           content: t("logo");
         }
@@ -52,6 +55,7 @@ footer {
     .footer-right {
       text-align: right;
       width: 50%;
+
       h2 {
         font-size: 2.25em;
         font-weight: bold;
@@ -85,6 +89,7 @@ footer {
       font-size: 15em;
       font-weight: bold;
       z-index: -1;
+
       @include themed() {
         color: t("secondary-gray");
       }

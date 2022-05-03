@@ -1,6 +1,8 @@
 import prisma from "~/lib/prisma";
+import { Project } from "~/generated/client";
 
-//@ts-ignore
-export default defineEventHandler(() => {
-  return prisma.project.findMany();
+export default defineEventHandler(async () => {
+  return (await prisma.project.findMany()) as (Project & {
+    [key: string]: any;
+  })[];
 });

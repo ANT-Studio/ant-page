@@ -14,7 +14,7 @@
 onMounted(() => {
   //i18n.locale.value = localStorage.getItem("lang") || DEFAULT_LOCALE;
   document.body.classList.add("theme");
-  document.body.classList.add("theme--dark");
+  document.body.classList.add(localStorage.getItem("last-theme") ?? "theme--dark");
 });
 </script>
 
@@ -26,6 +26,7 @@ onMounted(() => {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  transition: background-color .1s ease-in-out;
 }
 
 body {
@@ -41,4 +42,6 @@ body {
   min-width: 100vw;
   min-height: 100vh;
 }
+
+
 </style>

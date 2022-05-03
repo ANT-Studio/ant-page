@@ -16,10 +16,10 @@ export const useColorTheme: ColorModeTheme = () => {
   const toggleTheme = async () => {
     const theme = await getTheme();
 
-    document.body.classList.replace(
-      `theme--${theme}`,
-      `theme--${theme == "dark" ? "light" : "dark"}`
-    );
+    const themeString = `theme--${theme == "dark" ? "light" : "dark"}`;
+
+    document.body.classList.replace(`theme--${theme}`, themeString);
+    localStorage.setItem("last-theme", themeString);
   };
 
   return {

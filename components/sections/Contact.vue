@@ -53,6 +53,7 @@ import { __ } from "~/utils/__";
 @import "../../assets/styles/mixins";
 @import "../../assets/styles/variables";
 @import "../../assets/styles/themes";
+
 .contact {
   position: relative;
   overflow: hidden;
@@ -63,7 +64,9 @@ import { __ } from "~/utils/__";
 
   .contact-wrapper {
     @include sectionContainer();
+
     padding: 0 0 4em 0;
+
     .contact-titles {
       @include sectionTitle();
     }
@@ -78,10 +81,12 @@ import { __ } from "~/utils/__";
         display: flex;
         flex-direction: column;
         gap: 4em;
+
         .contact-form-entry {
           display: flex;
           flex-direction: column;
           gap: 1.5em;
+
           label {
             font-size: 1.5em;
             font-weight: bold;
@@ -91,13 +96,14 @@ import { __ } from "~/utils/__";
             width: calc(100% - 60px);
             font-size: 1.5em;
             padding: 15px 30px;
+            outline: none;
+            border: none;
+            font-weight: bold;
+
             @include themed() {
               background: t("bg");
               color: t("text");
             }
-            outline: none;
-            border: none;
-            font-weight: bold;
 
             &::placeholder {
               @include themed() {
@@ -112,23 +118,27 @@ import { __ } from "~/utils/__";
         width: 60%;
         display: flex;
         flex-direction: column;
+
         p {
           font-size: 1.5em;
           font-weight: bold;
           margin-bottom: 1em;
         }
+
         textarea {
           height: 100%;
           padding: 15px;
           resize: none;
-          @include themed() {
-            background: t("bg");
-            color: t("text");
-          }
           outline: none;
           border: none;
           font-size: 1.5em;
           font-weight: bold;
+
+          @include themed() {
+            background: t("bg");
+            color: t("text");
+          }
+
           &::placeholder {
             @include themed() {
               color: t("secondary-gray");
@@ -145,12 +155,14 @@ import { __ } from "~/utils/__";
     align-content: center;
     display: flex;
     flex-direction: row-reverse;
+
     input {
       @include themed() {
         background: t("text");
         color: t("bg");
         box-shadow: 10px 10px 0px $secondary-shadow;
       }
+
       transition: all 0.1s ease-in-out;
       cursor: pointer;
       font-size: 2em;
@@ -165,6 +177,7 @@ import { __ } from "~/utils/__";
       }
     }
   }
+
   .decoration {
     div {
       @include decoration() {
