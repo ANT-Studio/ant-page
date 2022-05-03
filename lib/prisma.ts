@@ -1,3 +1,5 @@
+// noinspection ES6ConvertVarToLetConst
+
 import { PrismaClient } from "~/generated/client/index.js";
 
 let prisma: InstanceType<typeof PrismaClient>;

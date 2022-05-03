@@ -5,8 +5,11 @@ export default defineNuxtConfig({
   runtimeConfig: {
     databaseUrl: "",
   },
-  buildModules: ["@intlify/nuxt3"],
+  buildModules: [/*"@intlify/nuxt3"*/],
   intlify: {
     localeDir: "assets/locales",
+  },
+  typescript: {
+    strict: true
   },
 });

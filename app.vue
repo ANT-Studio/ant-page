@@ -6,13 +6,13 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
-import { DEFAULT_LOCALE } from "~/lib/constants";
+//import { DEFAULT_LOCALE } from "~/lib/constants";
+//import { useI18n } from "vue-i18n";
 
-const i18n = useI18n();
+//const i18n = useI18n();
 
 onMounted(() => {
-  i18n.locale.value = localStorage.getItem("lang") || DEFAULT_LOCALE;
+  //i18n.locale.value = localStorage.getItem("lang") || DEFAULT_LOCALE;
   document.body.classList.add("theme");
   document.body.classList.add("theme--dark");
 });

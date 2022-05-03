@@ -2,9 +2,9 @@ import { TranslationKey } from "~/lib/interfaces";
 import { NamedValue, useI18n } from "vue-i18n";
 
 export const __ = (key: TranslationKey, replace?: NamedValue<any>) => {
-  const { t } = useI18n();
+  //const { t } = useI18n();
 
-  return t(key, replace);
+  return key; //t(key, replace);
 };
 
 declare global {
