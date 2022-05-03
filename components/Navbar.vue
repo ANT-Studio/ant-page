@@ -1,11 +1,13 @@
 <template>
   <nav class="navbar">
-    <div class="logo" />
+    <NuxtLink to="/">
+      <div class="logo" />
+    </NuxtLink>
     <div class="links">
       <div class="link" v-for="link in routes" :key="link.label">
-        <router-link :to="link.link">
+        <NuxtLink :to="link.link">
           {{ __(link.label) }}
-        </router-link>
+        </NuxtLink>
       </div>
     </div>
     <div class="actions">

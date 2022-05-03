@@ -1,7 +1,7 @@
 <template>
-  <router-link :to="to">
+  <NuxtLink :to="to">
     <slot />
-  </router-link>
+  </NuxtLink>
 </template>
 
 <script lang="ts" setup>

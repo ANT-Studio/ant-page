@@ -10,13 +10,13 @@
           <MemberCard
             avatar="Platfus"
             name="Szymon Pawlus"
-            position="1st dzban"
+            position="Team leader"
             description="Jestem profesjonalnym programistą który umie programować w C, C++, HTML, CSS, JS, TS, PHP, MYSQL, Python, Lisp, Julia, Go, Kotlin, Haskell, Lua, Rust, Ruby, Ruby on Rails, C#, Laravel, JSX, SCSS, SASS, .NET, ASP.NET, WPF, Node.js, CoffeScript, JSON oraz nie lubię pić herbaty"
           />
           <MemberCard
             avatar="Peter"
             name="Piotrek Pilszczek"
-            position="2st dzban"
+            position="Team leader"
             description="Programowanie w CSS to moja pasja. Uwielbiam pisać również backend w języku programowania HTML."
           />
         </div>

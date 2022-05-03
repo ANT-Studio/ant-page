@@ -90,6 +90,7 @@ import { __ } from "~/utils/__";
     }
 
     .hero-image {
+      animation: float 6s ease-in-out infinite;
       min-width: 50%;
 
       img {
@@ -117,6 +118,20 @@ import { __ } from "~/utils/__";
         }
       }
     }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(-10px);
+  }
+
+  50% {
+    transform: translatey(10px);
+  }
+
+  100% {
+    transform: translatey(-10px);
   }
 }
 </style>

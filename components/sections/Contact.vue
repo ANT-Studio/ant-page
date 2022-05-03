@@ -160,19 +160,19 @@ import { __ } from "~/utils/__";
       @include themed() {
         background: t("text");
         color: t("bg");
-        box-shadow: 10px 10px 0px $secondary-shadow;
+        box-shadow: 10px 10px 0 $secondary-shadow;
       }
 
       transition: all 0.1s ease-in-out;
       cursor: pointer;
-      font-size: 2em;
+      font-size: 1.5em;
       font-weight: bold;
       border: none;
       outline: none;
       padding: 7px 40px;
 
       &:hover {
-        box-shadow: 5px 5px 0px $secondary-shadow;
+        box-shadow: 5px 5px 0 $secondary-shadow;
         filter: invert(0.05);
       }
     }
