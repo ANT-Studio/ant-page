@@ -1,0 +1,50 @@
+@import "variables";
+@import "themes";
+
+@mixin button($bg, $text, $shadow: none) {
+  background: $bg;
+  color: $text;
+
+  border: none;
+  padding: 0.8em 2.5em;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  box-shadow: $shadow;
+
+  &:hover {
+    opacity: 90%;
+  }
+}
+
+@mixin sectionContainer() {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+//noinspection CssUnknownTarget
+@mixin decoration() {
+  @include themed() {
+    filter: t("invert");
+  }
+
+  position: absolute;
+  width: 150px;
+  height: 300px;
+  background: url("/images/Grid.svg") no-repeat;
+
+  @content;
+}
+
+@mixin sectionTitle() {
+  h2 {
+    font-size: 3em;
+    font-weight: 900;
+    padding: 2em 0 1em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+}

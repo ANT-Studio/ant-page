@@ -1,0 +1,46 @@
+{
+  "test": "Witaj {whatToHello}!",
+  "navbar": {
+    "home": "Strona główna",
+    "projects": "Projekty",
+    "about": "O nas",
+    "contactUs": "Skontaktuj się"
+  },
+  "teamPreview": {
+    "title": "Poznaj nasz zespół.",
+    "subtitle": "Poznaj nasze umiejętności. Oraz osobowości.",
+    "memberCard": {
+      "aboutUs": "O mnie"
+    },
+    "readAllAboutUs": "Poczytaj o nas na dedykowanej",
+    "readAllAboutUsLink": "stronie."
+  },
+  "projects": {
+    "title": "Poznaj nasze projekty.",
+    "subtitle": "Znajdź nasze aplikacje. Oraz strony.",
+    "seeAllProjects": "Zobacz wszystkie nasze projekty",
+    "seeAllProjectsLink": "tutaj."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Zbudujmy przyszłość razem!",
+    "label": {
+      "name": "Jak się nazywasz?",
+      "email": "Jaki jest twój email?",
+      "message": "Co chcesz nam przekazać?"
+    },
+    "placeholder": {
+      "name": "Wpisz tu swoje imię...",
+      "email": "Wpisz tu swój email...",
+      "message": "Wpisz tu swoją wiadomość"
+    },
+    "button": {
+      "message": "Wyślij wiadomość."
+    }
+  },
+  "footer": {
+    "description": "To jest stopka naszej strony! <br> Copyright &trade; AntProject 2021",
+    "ourDescription": "Ta strona została w całości <br> zaprojektowana i stworzona przez",
+    "us": "nas"
+  }
+}

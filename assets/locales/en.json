@@ -1,0 +1,46 @@
+{
+  "test": "Hello {whatToHello}!",
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About us",
+    "contactUs": "Contact us"
+  },
+  "teamPreview": {
+    "title": "Meet out team.",
+    "subtitle": "Discover our skills. And personalities.",
+    "memberCard": {
+      "aboutUs": "About me"
+    },
+    "readAllAboutUs": "Read all about us on dedicated",
+    "readAllAboutUsLink": "page."
+  },
+  "projects": {
+    "title": "Discover our projects.",
+    "subtitle": "Find our applications. And websites.",
+    "seeAllProjects": "See all of our projects",
+    "seeAllProjectsLink": "here."
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Let's create the future together. Not yet though",
+    "label": {
+      "name": "What's your name?",
+      "email": "What's your email?",
+      "message": "What do you want to tell us?"
+    },
+    "placeholder": {
+      "name": "Entery your name...",
+      "email": "Enter your email...",
+      "message": "Enter your message..."
+    },
+    "button": {
+      "message": "Send the message."
+    }
+  },
+  "footer": {
+    "description": "This is footer of our page! <br> Copyright &trade; AntProject 2021",
+    "ourDescription": "This page was fully <br>designed and created by",
+    "us": "us."
+  }
+}
