@@ -14,23 +14,12 @@
         </div>
         <div class="projects-list">
           <ProjectPreview
-            title="Project Name"
-            logo="/images/Logo.svg"
-            description="This is some simple description"
-            website="test"
-          />
-          <ProjectPreview
-            title="Project Name"
-            logo="/images/Logo.svg"
-            description="This is some simple description"
-            github="test"
-          />
-          <ProjectPreview
-            title="Project Name"
-            logo="/images/Logo.svg"
-            description="This is some simple description"
-            website="test"
-            github="test"
+            :title="project.name"
+            :logo="project.logo"
+            :description="project.description"
+            :website="project.website"
+            :github="project.github"
+            v-for="project in projects"
           />
         </div>
       </div>
@@ -45,6 +34,9 @@
 
 <script lang="ts" setup>
 import { __ } from "~/utils/__";
+import { Project } from "~/generated/client";
+
+defineProps<{ projects: Project[] }>();
 </script>
 
 <style lang="scss" scoped>
