@@ -77,6 +77,24 @@ const { toggleTheme } = useColorTheme();
 
       text-decoration: none;
     }
+
+    .link {
+      position: relative;
+
+      .router-link-exact-active::after {
+        content: "";
+        position: absolute;
+        top: 2.2rem;
+        left: 50%;
+        width: 2.8rem;
+        height: 0.2rem;
+        margin-left: -1.4rem;
+
+        @include themed() {
+          background-color: t("text");
+        }
+      }
+    }
   }
 
   .actions {

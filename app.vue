@@ -33,6 +33,7 @@ onMounted(() => {
 }
 
 body {
+  overflow: overlay;
   overflow-x: hidden;
 }
 
@@ -63,7 +64,6 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: $bg--dark;
   border: none;
   border-radius: 0;
 }
